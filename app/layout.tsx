@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from 'next/font/google'
 import "./globals.css";
+import Header from './components/Header';
 
 
 const jetbrains_mono = JetBrains_Mono({
@@ -19,7 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jetbrains_mono.className}>{children}</body>
+      <body className={jetbrains_mono.className}>
+        <main className="flex min-h-screen flex-col items-center justify-between py-6 px-[200px]">
+          <Header/>
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

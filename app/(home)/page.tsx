@@ -1,19 +1,11 @@
 import Link from 'next/link';
-import GithubIcon from '../public/assets/svg/github.svg'
-import LinkedInIcon from '../public/assets/svg/linkedin.svg'
-import TistoryIcon from '../public/assets/svg/tistory.svg'
-import DownloadIcon from '../public/assets/svg/download.svg'
+import GithubIcon from '../../public/assets/svg/github.svg'
+import LinkedInIcon from '../../public/assets/svg/linkedin.svg'
+import TistoryIcon from '../../public/assets/svg/tistory.svg'
+import DownloadIcon from '../../public/assets/svg/download.svg'
 import Image from 'next/image';
 
 export default function Home() {
-
-  const menu = [
-    { name: 'Home', route: '/' },
-    { name: 'Services', route: '/services' },
-    { name: 'Resume', route: '/resume' },
-    { name: 'Work', route: '/work' },
-    { name: 'Contact', route: '/contact' }
-  ]
 
   const icon = [
     {name: 'github', route: '/', icon: GithubIcon},
@@ -22,29 +14,6 @@ export default function Home() {
   ]
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-6 px-[200px]">
-      <header className='header w-full h-[100px] flex items-center justify-between '>
-        <Link
-          href={'/'}
-          className='logoConatiner h-full flex items-center justify-between'
-        >
-          <span className='text-[30px]  hover:text-[#04fa9a]'>Jaehun</span>
-          <span className='text-[30px] text-[#04fa9a]'>.</span>
-        </Link>
-        <div className='menuContainer h-full flex items-center justify-between'>
-          {
-            menu.map((item, index) => (
-              <Link
-                href={item.route}
-                className=' hover:text-[#04fa9a] mr-[30px]'
-                key={index}
-              >
-                <span className='text-[20px] hover:underline underline-offset-4'>{ item.name }</span>
-              </Link>
-            ))
-          }
-        </div>
-      </header>
       <section className='introduceSection w-full flex items-center justify-between'>
         <div className='leftContainer flex flex-col items-start'>
           <p className='text-[20px]'>Web Frontend Developer</p>
@@ -86,10 +55,5 @@ export default function Home() {
             <Image width={700} height={700} src='/assets/img/myPhoto.png' alt='my_Photo'/>
         </div>
       </section>
-
-      <footer className='footer w-full h-[100px] flex'>
-
-      </footer>
-    </main>
   );
 }
