@@ -14,7 +14,7 @@ export default function Home() {
   ]
 
   return (
-      <section className='introduceSection w-full flex items-center justify-between'>
+      <section className='introduceSection w-full xl:py-[200px] flex items-center justify-between'>
         <div className='leftContainer flex flex-col items-start'>
           <p className='text-[20px]'>Web Frontend Developer</p>
           <p className='text-[70px]'>{`Hello I'm`}</p>
