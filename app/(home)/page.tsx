@@ -8,9 +8,9 @@ import Image from 'next/image';
 export default function Home() {
 
   const icon = [
-    {name: 'github', route: '/', icon: GithubIcon},
-    {name: 'linkedIn', route: '/', icon: LinkedInIcon},
-    {name: 'TistoryBlog', route: '/', icon: TistoryIcon},
+    {name: 'github', route: 'https://github.com/Ju-jh', icon: GithubIcon},
+    {name: 'linkedIn', route: 'https://www.linkedin.com/in/%EC%A3%BC-%EC%9E%AC%ED%9B%88-a21819293/', icon: LinkedInIcon},
+    {name: 'TistoryBlog', route: 'https://jrogrammer.tistory.com/', icon: TistoryIcon},
   ]
 
   return (
