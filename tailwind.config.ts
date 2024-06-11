@@ -22,6 +22,7 @@ const config: Config = {
     },
     colors: {
       'neon-green': '#04fa9a',
+      'dark-theme':'#1A1820',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

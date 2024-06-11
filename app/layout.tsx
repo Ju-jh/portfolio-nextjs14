@@ -22,7 +22,7 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body className={jetbrains_mono.className}>
-        <main className="flex min-h-screen flex-col items-center justify-start py-6 px-[200px]">
+        <main className="flex min-h-screen flex-col items-center justify-start px-[200px]">
           <Header/>
           {children}
         </main>
