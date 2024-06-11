@@ -1,15 +1,8 @@
 import Link from 'next/link'
+import { menuArray } from '../constants'
 
-function Header() {
+const Header = () => {
   
-  const menu = [
-    { name: 'Home', route: '/' },
-    { name: 'Services', route: '/services' },
-    { name: 'Resume', route: '/resume' },
-    { name: 'Work', route: '/work' },
-    { name: 'Contact', route: '/contact' }
-  ]
-
   return(
       <header className='header w-full h-[100px] flex items-center justify-between '>
         <Link
@@ -21,7 +14,7 @@ function Header() {
         </Link>
         <div className='menuContainer h-full flex items-center justify-between'>
           {
-            menu.map((item, index) => (
+            menuArray.map((item, index) => (
               <Link
                 href={item.route}
                 className=' hover:text-[#04fa9a] mr-[30px]'

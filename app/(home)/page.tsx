@@ -1,17 +1,9 @@
 import Link from 'next/link';
-import GithubIcon from '../../public/assets/svg/github.svg'
-import LinkedInIcon from '../../public/assets/svg/linkedin.svg'
-import TistoryIcon from '../../public/assets/svg/tistory.svg'
 import DownloadIcon from '../../public/assets/svg/download.svg'
 import Image from 'next/image';
+import { iconArray } from '../constants';
 
-export default function Home() {
-
-  const icon = [
-    {name: 'github', route: 'https://github.com/Ju-jh', icon: GithubIcon},
-    {name: 'linkedIn', route: 'https://www.linkedin.com/in/%EC%A3%BC-%EC%9E%AC%ED%9B%88-a21819293/', icon: LinkedInIcon},
-    {name: 'TistoryBlog', route: 'https://jrogrammer.tistory.com/', icon: TistoryIcon},
-  ]
+const Home = () => {
 
   return (
       <section className='introduceSection w-full xl:py-[200px] flex items-center justify-between'>
@@ -39,7 +31,7 @@ export default function Home() {
               <DownloadIcon />
             </button>
             {
-              icon.map((item, index) => (
+              iconArray.map((item, index) => (
                 <Link
                   href={item.route}
                   key={index}
@@ -57,3 +49,5 @@ export default function Home() {
       </section>
   );
 }
+
+export default Home
