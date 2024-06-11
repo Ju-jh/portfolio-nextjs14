@@ -50,5 +50,14 @@ body {
 }
 
 .animate-spin-slow {
-  animation: spin-slow 10s linear infinite;
+  animation: spin-slow 20s linear infinite;
+}
+.animate-spin-slow2 {
+  animation: spin-slow 4s linear infinite;
+}
+.animate-spin-slow3 {
+  animation: spin-slow 2s linear infinite;
+}
+.animate-spin-slow4 {
+  animation: spin-slow 30s linear infinite;
 }

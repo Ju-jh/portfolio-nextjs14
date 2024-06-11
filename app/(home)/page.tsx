@@ -153,7 +153,13 @@ const Home = () => {
           </div>
       </div>
       <div  className='rightContainer w-[500px] h-[500px] relative'>
-        <div className='w-[500px] h-[500px] rounded-full border-opacity-65 border-dashed border-[2px] border-neon-green animate-spin-slow absolute shadow-xl shadow-neon-green '>
+        <div className='w-[500px] h-[500px] rounded-full border-opacity-65 border-none border-[2px] border-neon-green animate-spin-slow absolute shadow-xl shadow-neon-green '>
+        </div>
+        <div className='w-[500px] h-[500px] rounded-full border-opacity-65 border-none border-[2px] border-neon-green animate-spin-slow2 absolute shadow-lg shadow-neon-green '>
+        </div>
+        <div className='w-[500px] h-[500px] rounded-full border-opacity-65 border-none border-[2px] border-neon-green animate-spin-slow3 absolute shadow-lg shadow-[#58b791] '>
+        </div>
+        <div className='w-[500px] h-[500px] rounded-full border-opacity-65 border-none border-[2px] border-neon-green animate-spin-slow4 absolute drop-shadow-xl shadow-lg shadow-[#81f7f7] '>
         </div>
         <div className='w-[500px] h-[500px] flex items-center justify-center absolute'>
             <Image width={700} height={700} src='/assets/img/myPhoto.png' alt='my_Photo' className='absolute'/>
