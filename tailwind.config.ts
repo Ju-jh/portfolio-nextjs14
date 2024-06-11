@@ -20,6 +20,13 @@ const config: Config = {
       lg: '960px',
       xl: '1200px',
     },
+    colors: {
+      'neon-green': '#04fa9a',
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
   },
   plugins: [],
 };
