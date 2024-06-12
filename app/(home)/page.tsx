@@ -40,8 +40,8 @@ const Home = () => {
   }, []);
 
   return (
-      <section className='introduceSection w-full h-[2500px] xl:py-[300px] flex items-start justify-between z-0'>
-        <div className='leftContainer flex flex-col items-start bg-red-500'>
+      <section className='introduceSection w-full h-full xl:py-[300px] flex items-start justify-between z-0'>
+        <div className='leftContainer flex flex-col items-start '>
           <p className='text-[20px] mb-[10px]'>Web Frontend Developer</p>
           <div className='flex-1 flex-col'>
             <div className='min-w-[300px] min-h-[100px] flex items-center justify-start'>
@@ -152,7 +152,7 @@ const Home = () => {
             }
           </div>
       </div>
-      <div  className='rightContainer w-[500px] h-[500px] relative'>
+      <div  className='rightContainer w-[500px] h-[500px] relative '>
         <div className='w-[500px] h-[500px] rounded-full border-opacity-65 border-none border-[2px] border-neon-green animate-spin-slow absolute shadow-xl shadow-neon-green '>
         </div>
         <div className='w-[500px] h-[500px] rounded-full border-opacity-65 border-none border-[2px] border-neon-green animate-spin-slow2 absolute shadow-lg shadow-neon-green '>

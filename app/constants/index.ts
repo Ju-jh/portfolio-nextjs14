@@ -13,6 +13,7 @@ import TistoryIcon from '../../public/assets/svg/tistory.svg'
 
   export const menuArray = [
     { name: 'Home', route: '/' },
+    { name: 'Blog', route: '/post' },
     { name: 'Services', route: '/services' },
     { name: 'Resume', route: '/resume' },
     { name: 'Work', route: '/work' },
