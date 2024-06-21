@@ -1,5 +1,5 @@
+import { menuArray } from '@/constants'
 import Link from 'next/link'
-import { menuArray } from '../constants'
 
 const Header = () => {
   
@@ -9,7 +9,7 @@ const Header = () => {
           href={'/'}
           className='logoConatiner h-full flex items-center justify-between '
         >
-          <span className='text-[30px]  hover:text-[#04fa9a] z-2'>Jaehun</span>
+          <span className='text-[30px]  hover:text-[#04fa9a] z-2 transition-all'>Jaehun</span>
           <span className='text-[30px] text-[#04fa9a]'>.</span>
         </Link>
         <div className='menuContainer h-full flex items-center justify-between'>
@@ -17,10 +17,10 @@ const Header = () => {
             menuArray.map((item, index) => (
               <Link
                 href={item.route}
-                className=' hover:text-[#04fa9a] mr-[30px]'
+                className=' hover:text-[#04fa9a] mr-[30px] hover:underline hover:underline-offset-4 transition-all'
                 key={index}
               >
-                <span className='text-[20px] hover:underline underline-offset-4'>{ item.name }</span>
+                <span className='text-[20px]'>{ item.name }</span>
               </Link>
             ))
           }

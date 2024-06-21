@@ -1,8 +1,8 @@
 
 
-import GithubIcon from '../../public/assets/svg/github.svg'
-import LinkedInIcon from '../../public/assets/svg/linkedin.svg'
-import TistoryIcon from '../../public/assets/svg/tistory.svg'
+import GithubIcon from '../public/assets/svg/github.svg'
+import LinkedInIcon from '../public/assets/svg/linkedin.svg'
+import TistoryIcon from '../public/assets/svg/tistory.svg'
 
 
   export const iconArray = [
@@ -12,7 +12,7 @@ import TistoryIcon from '../../public/assets/svg/tistory.svg'
   ]
 
   export const menuArray = [
-    { name: 'Home', route: '/' },
+    { name: 'Introduce', route: '/' },
     { name: 'Blog', route: '/post' },
     { name: 'Services', route: '/services' },
     { name: 'Resume', route: '/resume' },

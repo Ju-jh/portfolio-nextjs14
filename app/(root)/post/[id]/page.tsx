@@ -1,4 +1,4 @@
-import DetailPost from '@/app/components/DetailPost';
+import DetailPost from '@/components/DetailPost';
 
 
 interface PostProps {

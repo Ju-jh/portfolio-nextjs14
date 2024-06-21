@@ -11,7 +11,7 @@ interface PostProps {
 
 const Post: NextPage<PostProps> = ({id, title, content, authorName}) => {
   return (
-    <div className='w-[100%] h-[100px] mb-[20px] rounded-xl shadow-sm shadow-bright-dark p-[10px] '>
+    <div className='w-[100%] h-[100px] mb-[20px] rounded-xl shadow-sm shadow-brightDark p-[10px] '>
       <h3>{ authorName }</h3>
       <h4>{title}</h4>
       <p>{content}</p>
