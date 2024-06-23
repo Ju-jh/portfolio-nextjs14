@@ -1,7 +1,12 @@
+'use client'
+
 import { menuArray } from '@/constants'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const Header = () => {
+
+  const path = usePathname()
   
   return(
       <header className='header w-full h-[150px] px-[200px] fixed flex items-center justify-between z-10 bg-[rgba(24,26,32,0.6)] '>
@@ -17,7 +22,7 @@ const Header = () => {
             menuArray.map((item, index) => (
               <Link
                 href={item.route}
-                className=' hover:text-[#04fa9a] mr-[30px] hover:underline hover:underline-offset-4 transition-all'
+                className={`${path === item.route && 'text-[#04fa9a]'} hover:text-[#04fa9a] mr-[30px] hover:underline hover:underline-offset-4 transition-all`}
                 key={index}
               >
                 <span className='text-[20px]'>{ item.name }</span>
