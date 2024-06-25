@@ -16,7 +16,7 @@ const Introduce = () => {
   const [isFourthSentenceKorean, setIsFourthSentenceKorean] = useState<boolean>(false);
 
   const downloadCV = () => {
-    console.log('이력서 다운로드 ...')
+    console.log('이력서 다운로드 ...' )
   }
 
   useEffect(() => {
@@ -144,7 +144,7 @@ const Introduce = () => {
                 <span className='mr-[10px]'>
                   DOWNLOAD CV
                 </span>
-                <DownloadIcon chassName="group-hover:fill-black" />
+                <DownloadIcon className="group-hover:fill-black" />
             </button>
             {
               iconArray.map((item, index) => (
@@ -169,15 +169,47 @@ const Introduce = () => {
           <div className='w-[500px] h-[500px] rounded-full border-opacity-65 border-none border-[2px] border-neonGreen animate-spin-slow4 absolute drop-shadow-xl shadow-lg shadow-[#81f7f7] '>
           </div>
           <div className='w-[500px] h-[500px] flex items-center justify-center absolute'>
-              <Image width={700} height={700} src='/assets/img/myPhoto.png' alt='my_Photo' className='absolute'/>
+              <Image width={700} height={700} src='/assets/img/myPhoto.png' alt='my_Photo' priority className='absolute'/>
           </div>
         </div>
       </section>
-      <section className='whyMeSection w-full h-[800px] flex items-center justify-between z-0 snap-center'>
-        <div className='odd:w-[600px] even:w-[400px] h-[500px] bg-neonGreen'>
+      <section
+        className='whyMeSection w-full h-[800px] flex items-center justify-between z-0 snap-center'
+      >
+        <div className='w-[400px] h-[600px] bg-neonGreen'>
+          
+        </div>
+        <div className='flex-1 h-[600px] bg-red'>
 
         </div>
-        <div className='even:w-[600px] odd:w-[400px] h-full bg-red'>
+      </section>
+      <section
+        className='whyMeSection w-full h-[800px] flex items-center justify-between z-0 snap-center'
+      >
+        <div className='flex-1 h-[600px] bg-neonGreen'>
+          
+        </div>
+        <div className='w-[400px] h-[600px] bg-red'>
+
+        </div>
+      </section>
+      <section
+        className='whyMeSection w-full h-[800px] flex items-center justify-between z-0 snap-center'
+      >
+        <div className='w-[400px] h-[600px] bg-neonGreen'>
+          
+        </div>
+        <div className='flex-1 h-[600px] bg-red'>
+
+        </div>
+      </section>
+      <section
+        className='whyMeSection w-full h-[800px] flex items-center justify-between z-0 snap-center'
+      >
+        <div className='flex-1 h-[600px] bg-neonGreen'>
+          
+        </div>
+        <div className='w-[400px] h-[600px] bg-red'>
 
         </div>
       </section>

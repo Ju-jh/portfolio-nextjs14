@@ -17,5 +17,4 @@ import TistoryIcon from '../public/assets/svg/tistory.svg'
     { name: 'Services', route: '/services' },
     { name: 'Resume', route: '/resume' },
     { name: 'Work', route: '/work' },
-    { name: 'Contact', route: '/contact' }
   ]

@@ -20,7 +20,7 @@ const HomeLayout = ({
   }>) => {
   return (
     <html lang="en">
-      <body className={jetbrains_mono.className}>
+      <body className={jetbrains_mono.className} suppressHydrationWarning={true}>
         {children}
       </body>
     </html>
