@@ -11,7 +11,7 @@ interface PostProps {
 
 const DetailPost: NextPage<PostProps> = ({id, title, content, authorName, createdAt}) => {
   return (
-    <div className='w-full min-h-[400px] mb-[20px] flex flex-col items-start justify-start rounded-lg shadow-sm shadow-neonGreen p-[10px]'>
+    <div className='w-full min-h-[400px] mb-[20px] flex flex-col items-start justify-start   p-[10px]'>
       <div className='w-full h-[50px] px-[20px] flex items-center justify-between'>
         <p className='text-[20px]'>제목 : {title}</p>
         <h3>게시자 : { authorName }</h3>

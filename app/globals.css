@@ -61,3 +61,6 @@ body {
 .animate-spin-slow4 {
   animation: spin-slow 30s linear infinite;
 }
+.animate-spin-fast {
+  animation: spin-slow 2s infinite;
+}

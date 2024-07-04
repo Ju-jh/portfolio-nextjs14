@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import DetailPost from '@/components/DetailPost';
 import { useParams } from 'next/navigation';
+import Loading from '@/app/loading';
 
 interface PostProps {
   author: {
@@ -48,7 +49,11 @@ const DetailPostPage = () => {
   console.log(data)
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className='w-screen h-screen flex items-center justify-center'>
+        < Loading />
+      </div>
+    )
   }
 
   if (!data) {

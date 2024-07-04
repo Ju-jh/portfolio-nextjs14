@@ -27,6 +27,6 @@
     "**/*.ts", 
     "**/*.tsx", 
     ".next/types/**/*.ts"
-, "app/api/post-create/create/route.js"  ],
+, "app/api/post-create/create/route.js", "app/api/post-create/route.js"  ],
   "exclude": ["node_modules"]
 }

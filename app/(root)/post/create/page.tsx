@@ -1,5 +1,6 @@
 'use client'
 
+import { postPosts } from '@/api/postPost';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
@@ -10,31 +11,19 @@ const CreatePage = () => {
   const [content, setContent] = useState('')
   const router = useRouter()
 
-  const handleTitleChange = (event:any) => {
-    setTitle(event.target.value)
+  const handleTitleChange = (e: any) => {
+    e.preventDefault();
+    setTitle(e.target.value)
   }
 
-  const handleContentChange = (event:any) => {
-    setContent(event.target.value)
+  const handleContentChange = (e: any) => {
+    e.preventDefault();
+    setContent(e.target.value)
   }
 
-  const handleSubmit = async (event:any) => {
-    event.preventDefault();
-    try {
-      const response = await fetch('/api/post-create', {
-        method: 'POST',
-        headers: {
-        'Content-Type' : 'application/json'
-        },
-        body: JSON.stringify({title, content})
-      })
-      if (response.ok) {
-        router.push('/post')
-        router.refresh()
-      }
-    } catch (error) {
-      console.error(error)
-    }
+  const handleSubmit = async (e:any) => {
+    e.preventDefault();
+    postPosts(title,content,router)
   }
 
   return (

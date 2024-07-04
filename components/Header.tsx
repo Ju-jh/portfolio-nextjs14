@@ -16,7 +16,10 @@ const Header = () => {
         >
           <span className='text-[30px]  hover:text-[#04fa9a] z-2 transition-all'>Jaehun</span>
           <span className='text-[30px] text-[#04fa9a]'>.</span>
-        </Link>
+      </Link>
+      <Link href={`${process.env.NEXT_PUBLIC_GOOGLE_LOGIN_URI}`}>
+          Google 로그인
+      </Link>
         <div className='menuContainer h-full flex items-center justify-between'>
           {
             menuArray.map((item, index) => (

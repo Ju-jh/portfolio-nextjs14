@@ -1,11 +1,9 @@
 import Link from 'next/link';
-import Post from '@/components/Post';
-import { getPosts } from '@/app/api/getPosts';
+import Posts from './components/Posts';
+import Loading from '@/app/loading';
+import { Suspense } from 'react';
 
-
-
-const Page = async () => {
-  const posts = await getPosts();
+export default async function PostsPage() {
 
   return (
     <div className='w-full h-dvh px-[200px] pt-[200px] pb-[100px] gap-[10px] flex flex-col items-center justify-between'>
@@ -17,28 +15,9 @@ const Page = async () => {
           </p>
         </Link>
       </div>
-      <div
-        className='w-full flex-1 overflow-hidden overflow-y-scroll'
-      >
-      {
-        posts.map((post, index) => (
-          <Link
-            key={index}
-            href={`/post/${post.id}`}
-            className="w-full"
-          >
-            <Post
-              id={post.id}
-              title={post.title}
-              content={post.content}
-              authorName={post.author?.name || 'Unknown Author'}
-            />
-          </Link>
-        ))
-      }
-      </div>
+      <Suspense fallback={<Loading />}>
+        <Posts/>
+      </Suspense>
     </div>
   )
 }
-
-export default Page;
